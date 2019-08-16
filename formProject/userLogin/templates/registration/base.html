@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load admin_urls %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Our website</title>
+
+        <link rel = "stylesheet" type= "text/css" href = "{% static 'css/style1.css' %}"/>
+</head>
+<body>
+    <div class="page-header">
+                    <div class="heading">
+                        <p class="headingmain">WELCOME!!</p>
+				    </div>
+                    <div class="navcontainer">
+					<a href="{% static '../register/' %}">No account? Sign Up! </a>   |
+					<a href="{% static '../login/' %}">Already registered? Login here</a>   |
+					<!--<a href="{% url 'admin:index' %}">admin</a>-->
+                    </div>
+    </div>
+    <div class="container1">
+				{% block content %}
+				{% endblock %}
+    </div>
+
+</body>
+</html>
+

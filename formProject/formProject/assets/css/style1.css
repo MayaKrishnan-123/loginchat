@@ -1,0 +1,19 @@
+.body{
+	margin : 0;
+	padding : 0;
+	height : 100%;
+	width:100%;
+	background-color : lavender;
+}
+.pageheader{
+	float:right;
+	padding-top:70px;
+	color:white;
+}
+.pageheader a{
+	color:white;
+	text-decoration: none;
+}
+a:hover {
+  color: yellow;
+}
